@@ -129,3 +129,33 @@ input[type="submit"]:hover {
         padding: 15px;
     }
 }
+
+/* Enhanced image styling for responsiveness */
+img.enhanced-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Responsive settings for tablets */
+@media (max-width: 768px) {
+    img.enhanced-image {
+        max-height: 300px; /* Limit height on smaller screens */
+        border-radius: 5px; /* Slightly smaller radius on mobile */
+    }
+}
+
+/* Responsive settings for mobile phones */
+@media (max-width: 480px) {
+    img.enhanced-image {
+        max-height: 200px; /* Further reduce height on phones */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
